@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -21,6 +22,7 @@ import com.hdregistros.hr_pets.repositories.PetRepository;
 @RestController // Web Service
 @RequestMapping(value = "/pets") //Caminho padrão do recurso
 public class PetResources {
+	
 	
 	@Autowired // Injeção de Dependêcnia
 	private PetRepository repository;
