@@ -11,6 +11,9 @@ Projeto rodando, co mcadastro efetuado conforme figura abaixo:
 #Função findAll()
 
 ![image](https://user-images.githubusercontent.com/35120906/129287051-f125c874-ba49-46dd-8518-e1deeef1d68e.png)
+ 
+ # Criada as Definições de Usuário
+ ![image](https://user-images.githubusercontent.com/35120906/129293578-12ea4e69-5bc1-4f98-8682-505ad4789359.png)
 
 
 
