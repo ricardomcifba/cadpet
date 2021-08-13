@@ -28,6 +28,7 @@ public class Pet implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(nullable = false)
 	private int id;
 	
 	@Column(nullable = false)
@@ -61,6 +62,15 @@ public class Pet implements Serializable{
 		return true;
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	
 	public String getNome() {
 		return nome;
 	}
