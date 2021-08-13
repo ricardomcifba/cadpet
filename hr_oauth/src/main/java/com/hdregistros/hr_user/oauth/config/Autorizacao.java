@@ -1,12 +1,10 @@
 package com.hdregistros.hr_user.oauth.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Bean;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
@@ -19,31 +17,17 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 @EnableAuthorizationServer
 public class Autorizacao  extends AuthorizationServerConfigurerAdapter{
 	
-	
+	@Autowired
 	private BCryptPasswordEncoder passwordEncoder;
 	
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
-	
-	
+	@Autowired
 	private JwtAccessTokenConverter accessTokenConverter;
-	
-    @Bean
-    public JwtAccessTokenConverter jwtAccessTokenConverter() {
-        return new JwtAccessTokenConverter();
-    }
 	
 	@Autowired
 	private JwtTokenStore tokenStore;
-	
 
-
-	@Autowired	
+	@Autowired
 	private AuthenticationManager authenticationManager;
-	
-
 		
 	@Override
 	public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
@@ -64,7 +48,7 @@ public class Autorizacao  extends AuthorizationServerConfigurerAdapter{
 	public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
 		endpoints.authenticationManager(authenticationManager)
 		.tokenStore(tokenStore)
-		.accessTokenConverter(jwtAccessTokenConverter());
+		.accessTokenConverter(accessTokenConverter);
 	}
 
 }
