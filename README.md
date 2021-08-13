@@ -1,10 +1,49 @@
 # Projeto de Cadastrp de Pets
+Este sistema consiste em um porjeto para cadastro de Pets.
+
 
 Projeto implementado seguindo o padrão de micro serviços.
 
-Projeto rodando, co mcadastro efetuado conforme figura abaixo:
+Para execução pode ser utilizado o FrameWork STS Tools.
+
+Os projetos estão divididos em:
+
+hr-pet - Responsável pelo cadastro dos Pets.
+
+A classe principal Pet pode ser cadastrada com Valores de Nome do Pet, Nome do proprietário e Raça.
+Os usuários de consulta e cadastro estão presentes na Classe User.
+Os testes foram executados utilizando o Banco H2.
+
+Os dados são injetados através do arquivo Data.sql
+
+Projeto rodando, com cadastro efetuado conforme figura abaixo:
 
 #Base de dados h2
+
+hr_user
+
+Os usuários de consulta e cadastro estão presentes na Classe User.
+Os testes foram executados utilizando o Banco H2.
+
+Os dados são injetados através do arquivo Data.sql
+
+Projeto rodando, com cadastro efetuado conforme figura abaixo:
+
+#Base de dados h2
+
+hr_oauth
+
+Onde estão concentradas todas as configurações para acesso e segurança do projeto.
+
+hr_api_gateway
+
+Utilizado para servidor de configuração 
+
+hr_eureka_server
+
+Servidor para registrar os microserviços. Este registro já está programado para portas aleatórias.
+
+Seguem alguns prints de tela com resultados do passo a passo.
 
 ![image](https://user-images.githubusercontent.com/35120906/129282927-01a19602-6fc1-4dad-a53d-8a5239b3adcc.png)
 
