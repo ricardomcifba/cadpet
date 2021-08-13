@@ -6,9 +6,9 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
+@EnableZuulProxy
 @EnableCircuitBreaker
 @EnableEurekaClient
-@EnableZuulProxy
 @SpringBootApplication
 public class HrApiGatewayApplication {
 
