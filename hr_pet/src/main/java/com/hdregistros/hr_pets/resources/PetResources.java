@@ -40,7 +40,7 @@ public class PetResources {
 		return ResponseEntity.ok(obj);
 	}	
 	
-	/*
+
 	@DeleteMapping("/{id}")
 	public ResponseEntity<List<Pet>> deleteById(@PathVariable Long id) throws Exception {
 		repository.deleteById(id);
@@ -66,7 +66,6 @@ public class PetResources {
 				});	
 		
 	}
-	*/
 
 
 }
