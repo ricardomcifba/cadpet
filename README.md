@@ -27,6 +27,11 @@ Projeto rodando, co mcadastro efetuado conforme figura abaixo:
  Regras de Usuário
  
  ![image](https://user-images.githubusercontent.com/35120906/129294021-48b9af26-9733-445a-a214-f9fa2af74acc.png)
+ 
+ Consultando usuário
+ 
+ ![image](https://user-images.githubusercontent.com/35120906/129296351-e8c734dd-7a0f-4770-9630-bb3510419f76.png)
+
 
 
 
