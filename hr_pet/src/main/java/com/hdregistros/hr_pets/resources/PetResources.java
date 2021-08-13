@@ -33,11 +33,13 @@ public class PetResources {
 		return ResponseEntity.ok(list);			
 	}
 	
-	@GetMapping("/{id}")
+
+	@GetMapping(value = "/{id}")
 	public ResponseEntity<Pet> findById(@PathVariable Long id) {
-		Pet pet = repository.findById(id).get();
-		return ResponseEntity.ok(pet);
-	}
+		Pet obj = repository.findById(id).get();
+		return ResponseEntity.ok(obj);
+	}	
+	
 	
 	@DeleteMapping("/{id}")
 	public ResponseEntity<List<Pet>> deleteById(@PathVariable Long id) throws Exception {
