@@ -31,6 +31,11 @@ Projeto rodando, co mcadastro efetuado conforme figura abaixo:
  Consultando usuário
  
  ![image](https://user-images.githubusercontent.com/35120906/129296351-e8c734dd-7a0f-4770-9630-bb3510419f76.png)
+ 
+ Usuário por email
+ 
+ ![image](https://user-images.githubusercontent.com/35120906/129361298-50bfe926-e3fd-41f4-a04c-46753d82ddbe.png)
+
 
 
 
