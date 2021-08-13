@@ -75,6 +75,9 @@ Seguem alguns prints de tela com resultados do passo a passo.
  
  ![image](https://user-images.githubusercontent.com/35120906/129361298-50bfe926-e3fd-41f4-a04c-46753d82ddbe.png)
 
+ 4 funções exigidas
+ 
+ ![image](https://user-images.githubusercontent.com/35120906/129374751-f7352064-d9f1-48db-b0e6-d2e979be9231.png)
 
 
 
