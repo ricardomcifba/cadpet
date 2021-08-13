@@ -41,7 +41,7 @@ public class PetResources {
 	}	
 	
 
-	@DeleteMapping("/{id}")
+	@DeleteMapping(value ="/{id}")
 	public ResponseEntity<List<Pet>> deleteById(@PathVariable Long id) throws Exception {
 		repository.deleteById(id);
 		return new ResponseEntity<>(HttpStatus.OK); 
